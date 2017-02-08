@@ -2,7 +2,7 @@ TrelloPowerUp.initialize({
   'board-buttons': function(t, options){
     return [{
     icon: './images/Trane_logo_crop.png',
-    text: 'Trane Button',
+    text: 'Trane',
     callback: function(t){
       alert("hey!");
     }}];
