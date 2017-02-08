@@ -1,7 +1,7 @@
 {
   "name": "Trane Trello Tools",
-  "description": "",
-  "details": "A static sample Power-Up hosted on GitHub pages. Feel free to fork [this repository](https://github.com/trello/power-up-template) as a starting point for your own Power-Up.",
+  "description": "desc: This Power-Up is to test functionality specific to Trane/Ingersoll-Rand",
+  "details": "This Power-Up is to test functionality specific to Trane/Ingersoll-Rand",
   "icon": {
     "url": "./images/Trane_logo_crop.png"
   },
