@@ -2,6 +2,25 @@
     <body>
         <h1>This page hosts a trello power up</h1>
     </body>
-  <script src="https://trello.com/power-ups/power-up.min.js"></script>
+  <script src="https://trello.com/power-ups/power-up.min.js">
+      TrelloPowerUp.initialize({
+  'board-buttons': function(t, options){
+    return [{
+    icon: './images/icon-white.svg',
+    text: 'My Button',
+    callback: function(t){
+      // do something when the button is clicked
+    }}];
+  },
+  'show-settings': function(t, options){
+    return t.popup({
+      title: 'Settings',
+      url: './settings.html',
+      height: 184
+    });
+  }
+});
+    
+    </script>
   <script src="./js/template.js"></script>
 </html>
