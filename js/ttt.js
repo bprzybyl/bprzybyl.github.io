@@ -4,7 +4,7 @@ TrelloPowerUp.initialize({
     icon: './images/Trane_logo_crop.png',
     text: 'Trane',
     callback: function(t){
-      alert("hey!");
+      alert(Trello.get('/member/me/boards', success, error));
     }}];
   },
   'show-settings': function(t, options){
@@ -15,3 +15,12 @@ TrelloPowerUp.initialize({
     });
   }
 });
+
+var success = function(successMsg) {
+  asyncOutput(successMsg);
+};
+
+var error = function(errorMsg) {
+  asyncOutput(errorMsg);
+};
+
