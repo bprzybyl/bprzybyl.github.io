@@ -1,0 +1,16 @@
+{
+  "name": "Power-Up Name",
+  "details": "The [Power-Up Name](https://example.org) is awesome because it can...",
+  "icon": {
+    "url": "./images/icon.png"
+  },
+  "author": "Your Name Here",
+  "capabilities": [
+    "board-buttons"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "./"
+    }
+  }
+}
