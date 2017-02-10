@@ -19,6 +19,7 @@
         text: 'My Button',
         callback: function(t){
           // do something when the button is clicked
+          t.card('id', 'name', 'url').then(function(promiseResult){console.log(promiseResult)});
         }}];
       },
       'show-settings': function(t, options){
