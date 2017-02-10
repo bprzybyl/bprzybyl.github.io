@@ -1,8 +1,8 @@
 {
   "name": "Brooks Custom Powerup",
-  "details": "The [Power-Up Name](https://example.org) is awesome because it can...",
+  "details": "Nothing to see here",
   "icon": {
-    "url": "./images/icon.png"
+    "url": "./images/dog-icon-35932.png"
   },
   "author": "Your Name Here",
   "capabilities": [
