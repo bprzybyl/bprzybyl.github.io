@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <h1>What up</h1>
   <script src="https://trello.com/power-ups/power-up.min.js"></script>
   <script>
     TrelloPowerUp.initialize({
@@ -19,7 +20,7 @@
         text: 'My Button',
         callback: function(t){
           // do something when the button is clicked
-          t.card('id', 'name', 'url').then(function(promiseResult){console.log(promiseResult)});
+          console.log(t);
         }}];
       },
       'show-settings': function(t, options){
