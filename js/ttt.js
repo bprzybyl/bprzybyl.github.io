@@ -4,7 +4,7 @@ TrelloPowerUp.initialize({
     icon: './images/Trane_logo_crop.png',
     text: 'Trane',
     callback: function(t){
-      alert(Trello.get('/member/me/boards', success, error));
+      alert("hey");
     }}];
   },
   'show-settings': function(t, options){
