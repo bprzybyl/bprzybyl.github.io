@@ -90,8 +90,11 @@ function handleFileSelect(evt) {
   //console.log("t.lists:");
   t.lists('id', 'name').then(function(promiseResult){
     var lists = promiseResult;
-    console.log(lists[1].name);
-    console.log(lists[1].id);
+    var list1 = lists[1].name;
+    var id1 = lists[1].id;
+    console.log("list1 = " + list1);
+    console.log("id1 = " + id1);
+    postCard(id1, "name1", "desc1");
   });
   // End testing
 
