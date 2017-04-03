@@ -64,7 +64,12 @@ function handleFileSelect(evt) {
   
   // Testing whether t is accsssible
 //  t.lists('id', 'name', 'url').then(function(promiseResult){console.log(promiseResult)});
+  console.log("t.board:");
+  t.board('id', 'name', 'url').then(function(promiseResult){console.log(promiseResult)});
+  console.log("t.lists:");
   t.lists('id', 'name').then(function(promiseResult){console.log(promiseResult)});
+  console.log("t.card:");
+  t.card('id', 'name').then(function(promiseResult){console.log(promiseResult)});
   // End testing
 
   
