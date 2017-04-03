@@ -61,7 +61,12 @@ function isAPIAvailable() {
 function handleFileSelect(evt) {
   var files = evt.target.files; // FileList object
   var file = files[0];
+  
+  // Testing whether t is accsssible
+  alert(t.lists());
+  // End testing
 
+  
   // read the file metadata
   var output = ''
       output += '<span style="font-weight:bold;">' + escape(file.name) + '</span><br />\n';
