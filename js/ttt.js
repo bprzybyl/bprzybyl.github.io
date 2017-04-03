@@ -3,9 +3,8 @@ TrelloPowerUp.initialize({
     return [{
     icon: './images/Trane_logo_crop.png',
     text: 'Trane',
-    callback: function(t){
-      alert("hey");
-    }}];
+    callback: boardButtonCallback
+    }];
   },
   'show-settings': function(t, options){
     return t.popup({
@@ -24,3 +23,34 @@ var error = function(errorMsg) {
   asyncOutput(errorMsg);
 };
 
+var boardButtonCallback = function(t){
+  return t.popup({
+    title: 'Popup List Example',
+    items: [
+      {
+        text: 'Open Overlay',
+        callback: function(t){
+          return t.overlay({
+            url: './overlay.html',
+            args: { rand: (Math.random() * 100).toFixed(0) }
+          })
+          .then(function(){
+            return t.closePopup();
+          });
+        }
+      },
+      {
+        text: 'Open Board Bar',
+        callback: function(t){
+          return t.boardBar({
+            url: './board-bar.html',
+            height: 200
+          })
+          .then(function(){
+            return t.closePopup();
+          });
+        }
+      }
+    ]
+  });
+};
