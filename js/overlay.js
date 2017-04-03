@@ -63,7 +63,7 @@ function handleFileSelect(evt) {
   var file = files[0];
   
   // Testing whether t is accsssible
-  alert(t.lists());
+  t.lists.then(function(promiseResult){console.log(promiseResult)});
   // End testing
 
   
