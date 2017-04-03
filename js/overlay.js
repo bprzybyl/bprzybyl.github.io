@@ -76,7 +76,7 @@ function postCard(destList, cardName, cardText) {
     idList: destList
     };
 
-  TrelloPowerUp.post('/cards/', newCard, success, error);
+  t.post('/cards/', newCard, success, error);
 }
 
 function handleFileSelect(evt) {
