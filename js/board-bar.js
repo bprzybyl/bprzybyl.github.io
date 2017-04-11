@@ -12,6 +12,23 @@ t.render(function(){
   // stored with t.set()
 });
 
+function authorizeUser() {
+  Trello.authorize({
+    type: 'popup',
+    name: 'Powerup Authorization',
+    scope: {
+      read: 'true',
+      write: 'true' },
+    expiration: 'never',
+    success: authenticationSuccess,
+    error: authenticationFailure
+  });  
+}
+
+var authenticationSuccess = function() { console.log('Successful authentication'); };
+
+var authenticationFailure = function() { console.log('Failed authentication'); };
+
 function getBoard() {
   t.board('id', 'name', 'url', 'shortLink', 'members') 
     .then(function(promiseResult) {
