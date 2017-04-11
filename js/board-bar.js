@@ -14,4 +14,9 @@ function myFunction() {
     .then(function(promiseResult) {
       console.log(promiseResult);
   });  
+  
+  t.cards('id', 'name', 'desc', 'due', 'closed', 'cover', 'attachments', 'members', 'labels', 'url', 'shortLink', 'idList', 'idShort') 
+    .then(function(promiseResult) {
+      console.log(promiseResult);
+  });  
 }
