@@ -16,6 +16,7 @@ function getBoard() {
     .then(function(promiseResult) {
       board = promiseResult;
       console.log(board);
+      debugger;
   });
 }
 
@@ -24,5 +25,6 @@ function getCards() {
     .then(function(promiseResult) {
     cards = promiseResult
       console.log(cards);
+      debugger;
   });  
 }
