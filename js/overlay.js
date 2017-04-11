@@ -88,14 +88,19 @@ function handleFileSelect(evt) {
   //console.log("t.board:");
   //t.board('id', 'name', 'url').then(function(promiseResult){console.log(promiseResult)});
   //console.log("t.lists:");
-  t.lists('id', 'name').then(function(promiseResult){
-    var lists = promiseResult;
-    var list1 = lists[1].name;
-    var id1 = lists[1].id;
-    console.log("list1 = " + list1);
-    console.log("id1 = " + id1);
-    postCard(id1, "name1", "desc1");
+  t.cards('id', 'name', 'url')
+    .then(function(promiseResult) {
+      console.log(promiseResult);
   });
+  
+//   t.lists('id', 'name').then(function(promiseResult){
+//     var lists = promiseResult;
+//     var list1 = lists[1].name;
+//     var id1 = lists[1].id;
+//     console.log("list1 = " + list1);
+//     console.log("id1 = " + id1);
+//     postCard(id1, "name1", "desc1");
+//   });
   // End testing
 
   
