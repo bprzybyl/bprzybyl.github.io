@@ -1,6 +1,8 @@
 /* global TrelloPowerUp */
 
 var t = TrelloPowerUp.iframe();
+var board = {};
+var cards = {};
 
 t.render(function(){
   // this function we be called once on initial load
@@ -9,14 +11,18 @@ t.render(function(){
   // stored with t.set()
 });
 
-function myFunction() {
+function getBoard() {
   t.board('id', 'name', 'url', 'shortLink', 'members') 
     .then(function(promiseResult) {
-      console.log(promiseResult);
-  });  
-  
+      board = promiseResult;
+      console.log(board);
+  });
+}
+
+function getCards() {  
   t.cards('id', 'name', 'desc', 'due', 'closed', 'cover', 'attachments', 'members', 'labels', 'url', 'shortLink', 'idList', 'idShort') 
     .then(function(promiseResult) {
-      console.log(promiseResult);
+    cards = promiseResult
+      console.log(cards);
   });  
 }
