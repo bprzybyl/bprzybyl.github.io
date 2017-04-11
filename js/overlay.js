@@ -30,6 +30,11 @@ document.addEventListener('keyup', function(e) {
 // Copy from http://evanplaice.github.io/jquery-csv/examples/file-handling.html
 
 $(document).ready(function() {
+  t.cards('id', 'name', 'desc', 'due', 'closed', 'cover', 'attachments', 'members', 'labels', 'url', 'shortLink', 'idList', 'idShort') 
+    .then(function(promiseResult) {
+      console.log(promiseResult);
+  });  
+  
   if(isAPIAvailable()) {
     $('#files').bind('change', handleFileSelect);
   }
