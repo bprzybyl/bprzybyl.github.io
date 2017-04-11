@@ -89,7 +89,7 @@ function handleFileSelect(evt) {
   //t.board('id', 'name', 'url').then(function(promiseResult){console.log(promiseResult)});
   //console.log("t.lists:");
   // valid card arguments 'id', 'name', 'desc', 'due', 'closed', 'cover', 'attachments', 'members', 'labels', 'url', 'shortLink', 'idList', 'idShort'
-  t.cards('name', 'due', 'closed') 
+  t.cards('id', 'name', 'desc', 'due', 'closed', 'cover', 'attachments', 'members', 'labels', 'url', 'shortLink', 'idList', 'idShort') 
     .then(function(promiseResult) {
       console.log(promiseResult);
   });
