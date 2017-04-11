@@ -3,6 +3,7 @@
 var t = TrelloPowerUp.iframe();
 var board = {};
 var cards = {};
+var jsonData = {};
 
 t.render(function(){
   // this function we be called once on initial load
@@ -16,8 +17,9 @@ function getBoard() {
     .then(function(promiseResult) {
       board = promiseResult;
       console.log(board);
-    $.getJSON(board.url + ".json").done(function(data) {
-      console.log(data);
+    var jsonURL = board.url + ".json";
+    $.getJSON(jsonURL, function(data) {
+      jsonData = data;
     });
       debugger;
   });
