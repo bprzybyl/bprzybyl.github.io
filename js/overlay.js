@@ -88,7 +88,7 @@ function handleFileSelect(evt) {
   //console.log("t.board:");
   //t.board('id', 'name', 'url').then(function(promiseResult){console.log(promiseResult)});
   //console.log("t.lists:");
-  t.cards('id', 'name', 'url')
+  t.cards()
     .then(function(promiseResult) {
       console.log(promiseResult);
   });
