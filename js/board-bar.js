@@ -16,7 +16,7 @@ function getBoard() {
     .then(function(promiseResult) {
       board = promiseResult;
       console.log(board);
-    $.getJson(board.url + ".json").done(function(data) {
+    $.getJSON(board.url + ".json").done(function(data) {
       console.log(data);
     });
       debugger;
