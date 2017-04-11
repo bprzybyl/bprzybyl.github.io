@@ -19,6 +19,8 @@ function getBoard() {
       console.log(board);
     var jsonURL = board.url + ".json";
     $.getJSON(jsonURL, function(data) {
+      console.log("hey");
+      console.log(data);
       jsonData = data;
     });
       debugger;
