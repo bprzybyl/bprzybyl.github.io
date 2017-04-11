@@ -23,7 +23,6 @@ function getBoard() {
       console.log(data);
       jsonData = data;
     });
-      debugger;
   });
 }
 
@@ -32,6 +31,5 @@ function getCards() {
     .then(function(promiseResult) {
     cards = promiseResult
       console.log(cards);
-      debugger;
   });  
 }
