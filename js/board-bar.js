@@ -8,3 +8,10 @@ t.render(function(){
   // you might want to react to, such as new data being
   // stored with t.set()
 });
+
+function myFunction() {
+  t.board('id', 'name', 'url', 'shortLink', 'members') 
+    .then(function(promiseResult) {
+      console.log(promiseResult);
+  });  
+}
