@@ -28,7 +28,7 @@ function authorizeUser() {
       console.log(errorThrown);
     }
   });  
-  
+  debugger;
 //   Trello.authorize({
 //     type: 'popup',
 //     name: 'Powerup Authorization',
