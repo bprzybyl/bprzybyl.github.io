@@ -16,14 +16,16 @@ function authorizeUser() {
   $.ajax({
     url: 'https://trello.com/b/sPYLhDVX/test-board-4.json',
     dataType: 'JSONP',
-    beforeSend: function(xhr) {
-      xhr.setRequestHeader("Authorization", "Bearer $token")
+    xhrFields: {
+      withCredentials: true
     },
     success: function(data){
       console.log(data);
     },
     error: function(jqXHR, textStatus, errorThrown) {
+      console.log(jqXHR);
       console.log(textStatus);
+      console.log(errorThrown);
     }
   });  
   
